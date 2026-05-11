@@ -1,0 +1,41 @@
+:root {
+    --bg: #f4f7ff;
+    --surface: #ffffff;
+    --text: #1f2a44;
+    --muted: #5f6a83;
+    --primary: #3e6aff;
+    --primary-soft: #e3ecff;
+    --accent: #ff8454;
+    --border: #d7dee9;
+    --shadow: 0 18px 40px rgba(31, 42, 68, 0.08);
+    --radius: 24px;
+    --max-width: 1200px;
+    --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}

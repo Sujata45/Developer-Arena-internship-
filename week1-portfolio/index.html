@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya Shinde - Portfolio</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="brand">
+                <a class="logo" href="#home">PS</a>
+                <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+            <ul id="primary-navigation" class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Welcome to my portfolio</p>
+                <h1>Hi, I'm Priya Shinde</h1>
+                <p class="hero-text">A front-end developer passionate about building accessible, responsive web experiences.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+            <img src="images/profile.svg" alt="Portrait illustration of Priya Shinde" class="hero-image">
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>I design polished websites using HTML, CSS, and JavaScript with a focus on accessibility and performance.</p>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <h3>Who I am</h3>
+                    <p>I enjoy translating ideas into responsive layouts and clean interfaces. I am learning modern web development best practices and creating projects that look great on every device.</p>
+                </div>
+                <div>
+                    <h3>What I do</h3>
+                    <ul>
+                        <li>Responsive website design</li>
+                        <li>Semantic HTML5 structure</li>
+                        <li>CSS Grid + Flexbox layouts</li>
+                        <li>Accessible user interfaces</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2>Skills</h2>
+                <p>Core front-end skills used to build modern portfolios and web pages.</p>
+            </div>
+            <div class="skill-list">
+                <article class="skill-card">
+                    <h3>HTML5</h3>
+                    <p>Semantic structure, accessible landmark elements, and clear content organization.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>CSS3</h3>
+                    <p>Responsive styling with variables, flexbox, grid, and smooth hover transitions.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first breakpoints, flexible layouts, and navigation optimized for every screen.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Accessibility</h3>
+                    <p>Keyboard-friendly controls, ARIA labels, contrast-aware text, and form validation.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <p>Examples of responsive project cards built with modern CSS layout techniques.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="images/project1.svg" alt="E-commerce website design preview">
+                    <h3>Responsive E-commerce Layout</h3>
+                    <p>Built with CSS Grid and adaptive media queries for a polished shopping experience.</p>
+                </article>
+                <article class="project-card">
+                    <img src="images/project2.svg" alt="Portfolio project presentation illustration">
+                    <h3>Portfolio Landing Page</h3>
+                    <p>Personal branding website with a mobile-first navigation menu and clear section hierarchy.</p>
+                </article>
+                <article class="project-card">
+                    <img src="images/project3.svg" alt="Contact form component illustration">
+                    <h3>Contact Form Interface</h3>
+                    <p>Accessible contact form with focus states, labels, and basic validation feedback.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p>Send a message to discuss a project, collaboration, or internship opportunity.</p>
+            </div>
+            <form class="contact-form" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Priya Shinde. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+</body>
+</html>
