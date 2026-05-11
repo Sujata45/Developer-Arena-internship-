@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f4f4f4;
+    color:#222;
+    padding:30px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+form{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+input,
+select,
+button{
+    padding:10px;
+}
+
+input{
+    flex:1;
+}
+
+.filters{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.filter-btn{
+    border:none;
+    cursor:pointer;
+}
+
+.filter-btn.active{
+    background:black;
+    color:white;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+#taskList{
+    list-style:none;
+}
+
+.task-item{
+    background:#eee;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:5px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.completed .task-text{
+    text-decoration:line-through;
+    opacity:0.6;
+}
+
+.priority{
+    padding:3px 8px;
+    border-radius:4px;
+    color:white;
+    font-size:12px;
+}
+
+.low{
+    background:green;
+}
+
+.medium{
+    background:orange;
+}
+
+.high{
+    background:red;
+}
+
+.task-actions button{
+    margin-left:5px;
+}
+
+.clear-btn{
+    width:100%;
+    margin-top:20px;
+}

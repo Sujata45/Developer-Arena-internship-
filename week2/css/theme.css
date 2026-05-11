@@ -1,0 +1,24 @@
+.dark{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark .container{
+    background:#2c2c2c;
+}
+
+.dark .task-item{
+    background:#444;
+}
+
+.dark input,
+.dark select{
+    background:#333;
+    color:white;
+    border:1px solid #666;
+}
+
+.dark button{
+    background:#555;
+    color:white;
+}

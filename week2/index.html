@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Task Manager</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Interactive Task Manager</h1>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-btn">
+            Toggle Theme
+        </button>
+
+        <!-- Form -->
+        <form id="taskForm">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter task..."
+                required
+            >
+
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button type="submit">
+                Add Task
+            </button>
+
+        </form>
+
+        <!-- Filters -->
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="active">
+                Active
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+                Completed
+            </button>
+
+        </div>
+
+        <!-- Stats -->
+        <div class="stats">
+
+            <p>Total: <span id="totalTasks">0</span></p>
+
+            <p>Completed: <span id="completedTasks">0</span></p>
+
+            <p>Active: <span id="activeTasks">0</span></p>
+
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+
+        <!-- Clear -->
+        <button id="clearCompleted" class="clear-btn">
+            Clear Completed
+        </button>
+
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
